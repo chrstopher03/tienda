@@ -18,7 +18,10 @@ img {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+.contenedor{
+	max-width: 1200px;
+	margin: auto;
+}
 header {
 	border-bottom: 1px solid #f1f5f9;
 	position: sticky;
@@ -113,7 +116,7 @@ html{
 }
 
 .img-fondo{
-background-color: #d5d5d5d0;
+background-color: #ffffffd0;
 }
 img{
     width: 100%;
@@ -125,7 +128,7 @@ img{
 }
 
 .contenedor{
-    max-width: 120rem;
+    max-width: 150rem;
     margin: 0 auto;
 }
 
@@ -375,14 +378,15 @@ margin-bottom: 20rem;
 
 }
 .nosotros-texto{
-	padding-top: 45px;
+	text-align: center;
     color: rgb(0, 0, 0);
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5rem;
 }
 
 .nosotros-img{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(204, 204, 204);
     border-radius: 5%;
 }
 
@@ -413,7 +417,7 @@ margin-bottom: 20rem;
     color: red;
     font-size: 4rem;
     margin: 3rem;
-    text-transform: uppercase;
+    text-align: center;
     font-weight: 800;
 }
 
@@ -491,7 +495,7 @@ margin-bottom: 20rem;
 }
 
 .btn-quick-view {
-	color: #334155;
+	color: #dadada;
 	background-color: #fff;
 }
 
