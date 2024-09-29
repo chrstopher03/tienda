@@ -790,6 +790,8 @@ header {
 	color: #eab308;
 }
 
+
+
 /* ********************************** */
 /*               FOOTER               */
 /* ********************************** */
@@ -826,20 +828,17 @@ footer {
 	text-transform: capitalize;
 }
 
-.youtube i {
-	color: #da0000;
-}
 
 .facebook i {
 	color: #4676ed;
 }
 
-.telegram i {
-	color: #32a9df;
+.instagram i {
+	color: #df32b1;
 }
 
-.twitter i {
-	color: #5a99ec;
+.whatsapp i {
+	color: #38d36e;
 }
 
 .container-social a span {
@@ -912,7 +911,7 @@ footer {
 
 	.menu-responsive > p{
 		padding: 0 20px;
-		color: #475569;
+		color: #0e0f0f;
 		font-size: 14px;
 	}
 
@@ -933,7 +932,7 @@ footer {
 		right: 30px;
 		font-size: 25px;
 		cursor: pointer;
-		color: #374151;
+		color: #faf9f9;
 	}
 
 	.menu-responsive nav {
@@ -955,7 +954,7 @@ footer {
 
 	.menu-nav-responsive li a {
 		text-decoration: none;
-		color: #0f172a;
+		color: #a7a7a8;
 		font-size: 14px;
 		text-transform: uppercase;
 	}
@@ -1026,14 +1025,15 @@ footer {
 	}
 
 	.image-3 {
-		grid-column: 1/-1;
-		grid-row: 1/3;
+		grid-column: 2/-1;
+		grid-row: 3/4;
 	}
 
 	.image-4 {
-		grid-column: 1/2;
-		grid-row: 3/-1;
-    }
+		grid-column: 2/-1;
+		grid-row: 4/-1;
+	}
+
 	.body-details-product .info-product .features-product {
 		grid-template-columns: 1fr;
 	}
@@ -1096,5 +1096,124 @@ footer {
 
 	.container-review {
 		max-width: 100%;
+	}
+}
+/****************/
+/**CREANDO LOGIN*/
+/****************/
+
+
+
+@import url('htppa://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.form{
+	background-color: #fff;
+	margin: auto;
+	width: 90%;
+	max-width: 400px;
+	padding: 4.5em 3em;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px -5px rgba(56, 8, 160, 0.3);
+	text-align: center;
+}
+
+.form__title{
+font-size: 2rem;
+margin-bottom: .5em;
+}
+
+.form__paragraph{
+	font-weight: 300;
+}
+
+.form__link{
+	font-weight: 400;
+	color: #000;
+	
+}
+
+.form__container{
+	margin-top: 3em;
+	display: grid;
+	gap: 2.5em;
+}
+
+.form__group{
+	position: relative;
+	--color: #5757577e;
+}
+
+.form__input{
+	width: 100%;
+	background: none;
+	color: #706c6c;
+	font-size: 1rem;
+	padding: .6em .3em;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid var(--color);
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.form__input:not(:placeholder-shown){
+color: #ff8f2d;}
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown)+ .form__label{
+	transform: translateY(-12px) scale(.7);
+	transform-origin: left top;
+}
+
+.form__label{
+	color: var(--color);
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 5px;
+	transform: translateY(10px);
+	transition: transform .5s, color .3s;
+	color: #ff8f2d;
+}
+
+.form__submit{
+	background-color: #ff8f2d;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-size: 1rem;
+padding: .8em 0;
+border: none;
+border-radius: .5em;
+}
+
+.form__line{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #ff8f2d;
+	transform: scale(0);
+	transform: left bottom;
+	transition: transform .4s;
+}
+.form__input:focus ~ .form__line,
+.form__input:not(:placeholder-shown) ~ .form__label{
+transform: scale(1);
+}
+@media(max-width:425px){
+	.form__title{
+		font-size: 1.8rem;
 	}
 }
